@@ -1,0 +1,16 @@
+Shaun doing web frontend
+backend probably Python
+communication probably REST API
+
+no calendar integration
+no freeform chat
+venues' menus aren't in scope
+
+stick to lunch
+meetup details in confirmation messages?
+
+if targeting CS students, must include Fusion
+other high priority secondary locations:
+-Crossroads, Lake Effect, MCC Food Court
+ideally support all 13* on campus?
+*Counting the three in MCC Food Court as one
