@@ -1,0 +1,37 @@
+Purpose and goals
+The purpose of the OverLunch app is to provide a convenient way for students to find a lunch companion while on the Suny Oswego campus. As such, it should function intuitively on mobile devices. The primary functions users may expect include:
+	Create an event
+	Browse events
+	Sort/ filter displayed events
+	Join an event
+	Cancel an event
+	Remove self from an event
+
+Other features users may expect include:
+	Identify other users they would like to meet for lunch (friends list)
+	A user profile page with a name, email address, and perhaps a photo
+
+
+List of Potential Goals
+	The OverLunch app should be mobile-friendly
+	The user interface should be intuitively
+	Users should be limited to students at SUNY Oswego
+	Users should be able to create events
+	Users should be able to browse events
+	Users should be able to see which other users are attached to an event
+	Users should be able to join an event
+	Users should be able to designate their attachment to an event as either Tentative or Confirmed
+	Users should have a way to identify other users they would like to meet for lunch (ie. a "friends list")
+	Users should be able to view events to which their friends are attached.
+	Users should be able to "Block" other users from viewing their profile
+	*Users should be able to block other users from seeing their events
+		* need to figure out how this works if several people are attached to a meeting and one of them invites Bob while another one has blocked Bob.
+	Users should be able to set default parameters for events
+	Users should be able to create recurring events
+	Users should be notified of changes to any event to which they are attached.
+	
+	
+Constraints
+
+
+Glossary:
