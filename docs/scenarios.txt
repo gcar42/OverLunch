@@ -1,0 +1,43 @@
+
+OverLunch User Scenarios
+Scenario functions:
+Initial setup
+Create an Availability
+Browse Availabilities
+       Default View:
+       Show confirmed meetings first.
+	Then show availabilities.
+		Default sort: temporal
+       Optional views:
+       By Venue
+       Not included in scenarios:
+       By Day	//Tomorrow’s items will be displayed with a grey background, today’s with something more colorful?
+       Friends Only
+Select availability/propose a meeting
+Select an availability/confirm meeting
+
+SCENARIOS:
+S1 Initial Setup
+Matt receives an invitation via email to use OverLunch from his classmate Charles. Charles had already told Matt about the app, so Matt clicks the link. A browser window opens displaying the OverLunch logo and prompting Matt to enter his Oswego.edu email address and click either sign-in or sign-up. He enters his email address and selects the sign-up option. The display tells him that an email confirmation link has been sent to his address, and that it contains a link to start using OverLunch. 
+S2 Browsing Availabilities
+Matt clicks the link in his confirmation email and is taken to the OverLunch home screen. It shows a list of cards representing the lunch availabilities of other OverLunch users. He notices that the availabilities occurring soonest are on the top of the list. Aside from the Availability tiles, he sees 2 obvious buttons. One is a plus sign that hovers near the bottom of the screen, and the other is funnel-shaped icon near the top-right of the screen.
+       S2.1 switching filters/sorts
+Clicking the funnel, he toggles the sort order of the list of availabilities to show the most recent availabilities at the venues closest to his location.
+       S2.2 Select an availability/ propose a meeting
+Matt scrolls through the list of availabilities noticing that near the end of the list the cards are… (a different color? Some visual cue to identify that these are for tomorrow, not today).
+He is interested in meeting someone for lunch today, so he scrolls back to the top of the list and selects an availability. The “Detail” view of the availability opens, showing that two other users have tentatively agreed that they could meet at the given venue between 11:30 AM and 1:30 PM. This all sounds good to Matt, so he clicks the “Join” button. He is immediately presented with a pop-up dialog that gives him the options of “Tentatively join this lunch” or “Confirm that you will attend.” The second option has a time slider allowing Matt to specify a time within the given time frame that he will arrive.
+Mat decides that he only wants to attend if other people will definitely be there, so chooses the Tentative option, letting the other tentative users know he is interested.
+
+
+
+QUESTIONS:
+Do we need to display a list of friends?
+       Select a friend to see his availabilities?
+
+
+
+
+
+
+       
+	
