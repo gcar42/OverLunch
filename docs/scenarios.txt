@@ -2,38 +2,66 @@
 OverLunch User Scenarios
 Scenario functions:
 Initial setup
-Create an Availability
-Browse Availabilities
-       Default View:
-       Show confirmed meetings first.
-	Then show availabilities.
-		Default sort: temporal
-       Optional views:
-       By Venue
-       Not included in scenarios:
-       By Day	//Tomorrow’s items will be displayed with a grey background, today’s with something more colorful?
-       Friends Only
-Select availability/propose a meeting
-Select an availability/confirm meeting
+Create an Event
+Browse Events
+   Default View:
+	Show confirmed meetings first.
+		Then show events.
+	Default sort: temporal
+		Optional views:
+		By Venue
+		Not included in scenarios:
+		By Day	//Tomorrow’s items will be displayed with a grey background, today’s with something more colorful?
+		Friends Only
+Select event/propose a meeting
+Select an event/confirm meeting
 
 SCENARIOS:
-S1 Initial Setup
-Matt receives an invitation via email to use OverLunch from his classmate Charles. Charles had already told Matt about the app, so Matt clicks the link. A browser window opens displaying the OverLunch logo and prompting Matt to enter his Oswego.edu email address and click either sign-in or sign-up. He enters his email address and selects the sign-up option. The display tells him that an email confirmation link has been sent to his address, and that it contains a link to start using OverLunch. 
+S1.0 Initial Setup
+	Matt receives an (goal)invitation via email(/goal) to use OverLunch from his classmate Charles. Charles had already told Matt about the app, so Matt clicks the link. 
+	A browser window opens prompting Matt to enter his (Constraint)Oswego.edu email address(/Constraint) and select either sign-in or sign-up. 
+	He enters his email address and selects the sign-up option. The display tells him that an email confirmation link has been sent to his address. 
+	The email will contain a link to start using OverLunch. 
 
-S2 Browsing Availabilities
-Matt clicks the link in his confirmation email and is taken to the OverLunch home screen. It shows a list of cards representing the lunch availabilities of other OverLunch users. He notices that the availabilities occurring soonest are on the top of the list. Aside from the Availability tiles, he sees 2 obvious buttons. One is a plus sign that hovers near the bottom of the screen, and the other is funnel-shaped icon near the top-right of the screen.
-       S2.1 switching filters/sorts
-Clicking the funnel, he toggles the sort order of the list of availabilities to show the most recent availabilities at the venues closest to his location.
-       S2.2 Select an availability/ propose a meeting
-Matt scrolls through the list of availabilities noticing that near the end of the list the cards are… (a different color? Some visual cue to identify that these are for tomorrow, not today).
-He is interested in meeting someone for lunch today, so he scrolls back to the top of the list and selects an availability. The “Detail” view of the availability opens, showing that two other users have tentatively agreed that they could meet at the given venue between 11:30 AM and 1:30 PM. This all sounds good to Matt, so he clicks the “Join” button. He is immediately presented with a pop-up dialog that gives him the options of “Tentatively join this lunch” or “Confirm that you will attend.” The second option has a time slider allowing Matt to specify a time within the given time frame that he will arrive.
-Mat decides that he only wants to attend if other people will definitely be there, so chooses the Tentative option, letting the other tentative users know he is interested.
+S2.0 Browsing events
+	Matt clicks the link in his confirmation email and is taken to the OverLunch home screen. 
+	The home screen shows a list of cards representing the lunch events of other OverLunch users. 
+	He notices that the events occurring soonest are on the top of the list. 
+	Aside from the event tiles, he sees 2 obvious buttons. 
+		One is a plus sign that hovers near the bottom of the screen, 
+		and the other is funnel-shaped icon near the top-right of the screen.
+   
+   S2.1 switching filters/sorts
+		Clicking the funnel, Matt toggles the sort order of the list of events to show the most recent events at the venues closest to his location.
+   
+S3.0 Select an event/ propose a meeting
+	Matt scrolls through the list of events noticing that near the end of the list the cards are… 
+		(a different color? Some visual cue to identify that these are for tomorrow, not today).
+	He is interested in meeting someone for lunch today, so he scrolls back to the top of the list and selects an event. 
+	The “Detail” view of the event opens, showing that two other users have tentatively agreed that they could meet at the given venue between 11:30 AM and 1:30 PM. 
+	This all sounds good to Matt, so he clicks the “Join” button. He immediately sees a dialog offering the options of 
+		“Tentatively join this lunch” or 
+		“Confirm that you will attend.” 
+			The second option has a time slider allowing Matt to specify a time within the given time frame that he will arrive.
+	Matt decides that he only wants to attend if other people will definitely be there, so chooses the Tentative option, letting the other tentative users know he is interested.
 
+S4.0
+	Still looking at the Detail view of the event, Matt sees his name and Charles' under the heading "Interested".
+	A moment later, Charles' name moves from "interested" to "Confirmed". 
+	Another dialog opens with the message: "Your classmate Charles has confirmed for lunch at VENUE, from TIME_START to TIME_END. Would you like to confirm, too?".
+	Matt taps "YES". His name in the detail view of the event moves from "Interested" to "Confirmed".
+	
 
-
-QUESTIONS:
+QUESTIONS/NOTES:
 Do we need to display a list of friends?
-       Select a friend to see his availabilities?
+       Select a friend to see his events?
+  
+How to handle notifications if this is a web-app?
+
+I (Greg) started using the term "event" instead of "availability", following the lead of our interviewed users.
+Instead of saying "Tentative" and "Confirmed", I suggest users are associate with events as either "Interested", or "Confirmed".
+
+Add "Event Reminders" and "Add to Calendar" to potential goals list.
 
 
 
