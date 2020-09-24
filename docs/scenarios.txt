@@ -1,4 +1,3 @@
-
 OverLunch User Scenarios
 Scenario functions:
 Initial setup
@@ -59,14 +58,5 @@ Do we need to display a list of friends?
 How to handle notifications if this is a web-app?
 
 I (Greg) started using the term "event" instead of "availability", following the lead of our interviewed users.
-Instead of saying "Tentative" and "Confirmed", I suggest users are associate with events as either "Interested", or "Confirmed".
-
-Add "Event Reminders" and "Add to Calendar" to potential goals list.
-
-
-
-
-
-
-       
+Instead of saying "Tentative" and "Confirmed", I suggest users are associate with events as either "Interested", or "Confirmed".     
 	
