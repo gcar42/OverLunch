@@ -49,7 +49,7 @@ Revision History in Github
    1. Purpose 
 The purpose of this document is to specify the design, development, implementation, and testing of an application intended to aid Suny Oswego students in finding a lunch companion on little to no advanced notice. This document will specify system requirements, goals, scenarios, and solutions , and will list qualities, functional requirements, and constraints of the system under development. This document will also describe quality assurance measures and testing procedures.
    2. Product Scope
-<Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies. If a separate vision and scope document is available, refer to it rather than duplicating its contents here.>
+This product should include a user interface that allows users to browse, create, and view detailed information about events, and related functions as outlined in section 2.2 Goals. Specifically outside the scope of this product is providing a venue’s menu. This product should make a reasonable effort to identify the times of operation for a given venue, but makes no claims as to the accuracy of this information.
 
 
 2. Overall Description
@@ -64,6 +64,68 @@ The goals enumerated in this section have been derived or taken directly from do
 Functionators are goals that represent the development of a minimally viable product. A product developed with only these goals would not be expected to satisfy the objectives of the OverLunch project. Rather these goals should be viewed as elemental components of a more complete and desirable product.
 Expectors are goals that represent the expected properties of the completed product under development. If implemented, these goals are likely to lead to a satisfying final product that achieves the OverLunch Project’s desired core functionality.
 Excitors are goals that might be less obvious, but add value and possibly a “wow” factor to the final product.
+      1. Functionators
+GF1
+	A user should be able to create an event
+	GF2
+	A user should be able to browse events
+	GF3
+	A user should be able to join an event
+	GF3.1
+	A user should be able to join an event, interested
+	GF3.2
+	A user should be able to join an event, confirmed
+	GF4
+	A user should be able to cancel an event
+	GF5
+	A user should be able to remove self from an event
+	GF6
+	A User should be able to see detailed information about an event
+	GF6.1
+	Event details should include users who have tagged the event as “interested”
+	GF6.2
+	Event details should include users who have confirmed they will attend the event.
+	GF6.3
+	Event details for unconfirmed events should include the time range in which the event could occur.
+	GF6.3
+	Event details should include the name of the venue selected for the event.
+	
+
+	
+
+	
+
+      2. Expectors
+	GE1
+	The overlunch app should allow users to request permission of other users to add them to a friends list.
+	GE2
+	A user should be able to accept a request to be added to a friends list.
+	GE2.1
+	A user should be able to decline a request to be added to a friends list.
+	GE2.3
+	Friendship is a mutual relationship ( it applies to both parties. If I grant a friendship permission, the requestor becomes my friend)
+	GE3
+	A user should be able to sort events (criteria tbd)
+	GE4
+	A user should be able to filter events (criteria tbd)
+	GE5
+	A user should be able to block other users
+	GE5.1
+	A blocked user should not be able to view the blocking user’s profile.
+	GE5.2
+	A blocked user should not be able to see events created by the blocking user.
+	GE6
+	A user should be able to set default event parameters
+	GE6.1 
+	Default event parameters should include venue
+	GE6.2
+	Default event parameters should include a time range
+	
+
+	
+
+	
+
    5. Design and Implementation Constraints
 <Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).>
    6. User Documentation

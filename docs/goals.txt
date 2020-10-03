@@ -9,6 +9,7 @@ The primary functions ( Functionators) users may expect include:
 		confirmed join
 	Cancel an event
 	Remove self from an event
+**the above Functionator goals have been added to the SRS template document. GC 10/02
 
 Other features users may expect (expectors) include: 
 	Identify other users they would like to meet for lunch (friends list)
@@ -20,6 +21,8 @@ Other features users may expect (expectors) include:
 		Ability to block users from seeing my events
 		* need to figure out how this works if several people are attached to a meeting and one of them invites Bob while another one has blocked Bob.
 	Users should be able to set default parameters for events
+
+**the above Expector goals have been added to the SRS template document. GC 10/02
 	Users should be notified of changes to any event to which they are attached.
 	
 Features users may not expect, but might be happy to find (excitors):
