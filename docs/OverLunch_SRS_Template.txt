@@ -65,7 +65,7 @@ Functionators are goals that represent the development of a minimally viable pro
 Expectors are goals that represent the expected properties of the completed product under development. If implemented, these goals are likely to lead to a satisfying final product that achieves the OverLunch Project’s desired core functionality.
 Excitors are goals that might be less obvious, but add value and possibly a “wow” factor to the final product.
       1. Functionators
-GF1
+	GF1
 	A user should be able to create an event
 	GF2
 	A user should be able to browse events
@@ -128,6 +128,21 @@ GF1
 
    5. Design and Implementation Constraints
 <Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).>
+	C1
+	The OverLunch app shall restrict the time range for scheduling events to Today and Tomorrow.
+	C2
+	The OverLunch app shall not retain a record of events or related data outside the range of Today and Tomorrow.
+	C3
+	Users of the OverLunch app must have an @oswego.edu email address.
+	C4
+	The OverLunch app should not permit events to be scheduled outside of a chosen venue's hours of operation, as provided by the venue;
+	C5
+	The OverLunch Project shall be completed by (DATE).
+	C6
+	The OverLunch app shall take reasonable steps to protect user data.
+	C6.1
+	Reasonable steps shall be determined by the agreement of the majority of the development team.
+
    6. User Documentation
 <List the user documentation components (such as user manuals, on-line help, and tutorials) that will be delivered along with the software. Identify any known user documentation delivery formats or standards.>
    7. Assumptions and Dependencies

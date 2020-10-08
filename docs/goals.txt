@@ -26,17 +26,17 @@ Other features users may expect (expectors) include:
 	Users should be notified of changes to any event to which they are attached.
 	
 Features users may not expect, but might be happy to find (excitors):
-	A Favorites tag for
-		Friends
-		Venues
-	A way to show the user's most common choices:
+	A Favorites tag for: (Eliminating this. See below) 
+		Friends (Eliminating this because it duplicates the functioon of a Friends List)
+		Venues	(Eliminating this b/c there are only 13 venues. Not needed)
+	A way to show the user's most common choices:(Eliminating this b/c we do not want to retain details on user movement. Google already handles this :) )
 		most visited venue
 		most frequent companion(s)
-	Alerts when a Favorite is attached to a new event
+	Alerts when a Favorite is attached to a new event (Eliminating this b/c not doing favorites. Also b/c of the uncertainty around notifying users via a web app)
 		A favorite friend creates an event
 		Another user creates an event at a favorite venue (this might be overkill with a lot of users)
-	User Event History
-	Users should be able to create recurring events
+	User Event History (Eliminating this. Not retaining this type of data)
+	Users should be able to create recurring events (Eliminating this)
 
 
 List of Potential Goals
@@ -45,8 +45,8 @@ List of Potential Goals
 	
 	
 Constraints
-	Intuitive user Interface
-	Extremely mobile-friendly (because any usage on a computer is unlikely)
+	Intuitive user Interface (This is more of a Quality Requirement)
+	Extremely mobile-friendly (because any usage on a computer is unlikely)(Also a Quality Req)
 	Users must have (sign in with) an oswego.edu email address
 	The app should not allow events to be scheduled outside of a venue's hours of operation
 
