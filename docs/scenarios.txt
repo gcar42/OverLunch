@@ -11,7 +11,15 @@ Browse Events
 		By Venue
 		Not included in scenarios:
 		By Day	//Tomorrow’s items will be displayed with a grey background, today’s with something more colorful?
+	Filter Events:
 		Friends Only
+		Today Only
+		Tomorrow Only
+		Confirmed Only
+		Current events (the current time is within the event's begins:ends time window)
+		Upcoming events
+		Past Events (Given that an event ceases to exist at the end of the day in which it occurred, should this be an option?)
+
 Select event/propose a meeting
 Select an event/confirm meeting
 
@@ -19,41 +27,58 @@ SCENARIOS:
 S1.0 Initial Setup
 	Matt receives an (goal)invitation via email(/goal) to use OverLunch from his classmate Charles. Charles had already told Matt about the app, so Matt clicks the link. 
 	A browser window opens prompting Matt to enter his (Constraint)Oswego.edu email address(/Constraint) and select either sign-in or sign-up. 
-	He enters his email address and selects the sign-up option. The display tells him that an email confirmation link has been sent to his address. 
+	He enters his email address and selects the sign-up option. He is prompted to enter a Screen Name (which is what other users will see) and to create a password for the OverLunch app. The display tells him that an email confirmation link has been sent to his address. 
 	The email will contain a link to start using OverLunch. 
 
 S2.0 Browsing events
-	Matt clicks the link in his confirmation email and is taken to the OverLunch home screen. 
+	Matt clicks the link in his confirmation email and is taken to the OverLunch Login screen.
+	After entering his email address in the Email field and password in the password field, Matt clicks the login button and is shown the Overlunch home screen.
 	The home screen shows a list of cards representing the lunch events of other OverLunch users. 
-	He notices that the events occurring soonest are on the top of the list. 
-	Aside from the event tiles, he sees 2 obvious buttons. 
-		One is a plus sign that hovers near the bottom of the screen, 
-		and the other is funnel-shaped icon near the top-right of the screen.
+	He notices that the events occurring soonest are on the top of the list. (default sort, no filters).
+	Aside from the event tiles, he sees 2 obvious buttons:
+		One is a plus sign that hovers near the bottom of the screen (New Event), 
+		and the other is funnel-shaped icon near the top-right of the screen (Filter and Sort options).
    
-   S2.1 switching filters/sorts
-		Clicking the funnel, Matt toggles the sort order of the list of events to show the most recent events at the venues closest to his location.
-   
-S3.0 Select an event/ propose a meeting
+   S2.1 Sort Events
+	Clicking the funnel, Matt toggles the sort-order of the list of events to show the most recent events at the venues closest to his location.
+
+   S2.2 Filter Events
 	Matt scrolls through the list of events noticing that near the end of the list the cards are… 
 		(a different color? Some visual cue to identify that these are for tomorrow, not today).
-	He is interested in meeting someone for lunch today, so he scrolls back to the top of the list and selects an event. 
-	The “Detail” view of the event opens, showing that two other users have tentatively agreed that they could meet at the given venue between 11:30 AM and 1:30 PM. 
-	This all sounds good to Matt, so he clicks the “Join” button. He immediately sees a dialog offering the options of 
-		“Tentatively join this lunch” or 
-		“Confirm that you will attend.” 
-			The second option has a time slider allowing Matt to specify a time within the given time frame that he will arrive.
-	Matt decides that he only wants to attend if other people will definitely be there, so chooses the Tentative option, letting the other tentative users know he is interested.
+	He is interested in meeting someone for lunch today, so he clicks the funnel icon again, and selects the filter option to show only Today's events.
+	The list updates (keeping his sort options) and tomorrow's events are no longer in the displayed list.
+   
+S3.0 Select an event/ view meeting details
+	Matt selects the 1st even in the list, which is the one that will be occurring soonest, and a window showing more details opens. 
+	The “Detail” view shows that SCREEN_NAME_ONE and SCREEN_NAME_TWO have expressed interest in this meeting at (VENUE), which could begin as soon as 11:30 and end as late 1:45 (Event Window).
+	
+   S3.1 Join an event: Interested
+	This all sounds good to Matt. He still wants to look at other events, so he selects "I'm Interested" instead of the "I'll Be There" option, adding his name to the list with the other two users.
+	The "I'll Be There" still appears, with tool to select a specific start and end time within the broader Event Window.
+	
+   S3.1 Join an event: Confirmed 
+	Shortly after Matt joins the event, the bar at the top of the event changes color and displays the word "Confirmed". SCREEN_NAME_ONE has confirmed that (s)he will be there. 
+	The the "I'll Be There" option is still available, but the time selection tool next to has vanished, replaced with "12:00 to 1:00".
+	
 
 S4.0
 	Still looking at the Detail view of the event, Matt sees his name and Charles' under the heading "Interested".
 	A moment later, Charles' name moves from "interested" to "Confirmed". 
 	Another dialog opens with the message: "Your classmate Charles has confirmed for lunch at VENUE, from TIME_START to TIME_END. Would you like to confirm, too?".
 	Matt taps "YES". His name in the detail view of the event moves from "Interested" to "Confirmed".
+
+to create: send out invites to friends (sends an email with a link)
+add friends to list: 
+invite a friend to a meeting.
+invite someone to use the app
+invite someone to be a friend?
+Cancel an event.
+Block a user.
 	
 
 QUESTIONS/NOTES:
-Do we need to display a list of friends?
-       Select a friend to see his events?
+Do we need to display a list of friends? (YES)
+       Select a friend to see his events? (Select a friend to see his user profile, which includes events to which the user is attached.)
   
 How to handle notifications if this is a web-app?
 
