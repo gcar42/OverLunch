@@ -60,18 +60,23 @@ S3.0 Select an event/ view meeting details
 	Shortly after Matt joins the event, the bar at the top of the event changes color and displays the word "Confirmed". SCREEN_NAME_ONE has confirmed that (s)he will be there. 
 	The the "I'll Be There" option is still available, but the time selection tool next to has vanished, replaced with "12:00 to 1:00".
 	
-
-S4.0
-	Still looking at the Detail view of the event, Matt sees his name and Charles' under the heading "Interested".
+	Still looking at the Detail view of the event, Matt sees his name and Charles' under the heading "Interested".(This may not be a heading, could be any distinguishing marker.)
 	A moment later, Charles' name moves from "interested" to "Confirmed". 
-	Another dialog opens with the message: "Your classmate Charles has confirmed for lunch at VENUE, from TIME_START to TIME_END. Would you like to confirm, too?".
+	Another dialog opens with the message: "Your classmate Charles has confirmed for lunch at VENUE, from TIME_START to TIME_END. Would you like to confirm, too?". (Verbiage subject to change, of course)
 	Matt taps "YES". His name in the detail view of the event moves from "Interested" to "Confirmed".
+
+S4.0 Invite non-user to join a meeting
+	Matt thinks that his classmate Lindsey would probably like to join this meeting. He closes the Detail view (because the option to share should not be hidden) and opens the context menu for the event he just confirmed. 
+	One of the options in this menu is "Invite a guest to this meeting." He selects that option and types Lindsey's email address. In the optional Message to Guest field he types "Hi Lin. It's Matt. Join me and Chuck for lunch!", and the clicks the INVITE button.
+	*Note: OverLunch should now check for Lindsey's email address in the user database. Not finding it means Lindsey will be sent a signup link. Perhaps it can include a token that automatically shows this meeting once her signup is complete.
+		If Lindsey is a user, she will be sent a meeting invitation link via email, but when she looks at the Events list, it should be immediately obvious that she has been invited.
+	
 
 to create: send out invites to friends (sends an email with a link)
 add friends to list: 
-invite a friend to a meeting.
-invite someone to use the app
-invite someone to be a friend?
+invite a friend to a meeting. (done)
+invite someone to use the app. (covered in the Invite to meeting scenario)
+invite someone to be a friend? 
 Cancel an event.
 Block a user.
 	
