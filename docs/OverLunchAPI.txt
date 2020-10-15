@@ -1,0 +1,8 @@
+OverLunch API
+A RESTFUL API returning JSON.
+
+ENDPOINTS:
+E1	Venue Endpoints:
+E2	Account Endpoints:
+E3	Event Endpoints:
+E4	Friend/Block Endpoints:
