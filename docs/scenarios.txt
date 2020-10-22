@@ -74,6 +74,7 @@ S4.0 Invite non-user to join a meeting
 S5.0 View User Profile
 	With a few minutes to spare between classes, Matt explores some of the Overlunch meeting details. Because he and Charles are OverLunch Friends, Matt can see more information about Charles by viewing Charles' user profile. 
 	He discovers this by clicking Charles' name in the meeting they have both already confirmed. Charles' profile shows the other events that he has either confirmed or marked "Interested". 
+	*Viewing your own profile page shows your username, email address,
 	
   S5.1	Invite User to Friends List
 	Matt selects one of the events that Charles is Intereted in. He sees that Charles' Sister Bonnie has confirmed for the event.
@@ -89,6 +90,7 @@ S6.0	Cancel an event (remove yourself from an event. It will still exist for oth
 	Still looking at the details of the meeting with Raphael, Matt returns to the context menu and selects "Cancel". The confirmation message says "You will be removed from this meeting. Continue?". Matt chooses yes, and the meeting detail screen closes.
 
 S7.0	Create an Event
+		*discussion notes: Select.
 
 to create: 
 send out invites to friends (sends an email with a link)(done)
