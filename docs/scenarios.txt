@@ -70,7 +70,24 @@ S4.0 Invite non-user to join a meeting
 	One of the options in this menu is "Invite a guest to this meeting." He selects that option and types Lindsey's email address. In the optional Message to Guest field he types "Hi Lin. It's Matt. Join me and Chuck for lunch!", and the clicks the INVITE button.
 	*Note: OverLunch should now check for Lindsey's email address in the user database. Not finding it means Lindsey will be sent a signup link. Perhaps it can include a token that automatically shows this meeting once her signup is complete.
 		If Lindsey is a user, she will be sent a meeting invitation link via email, but when she looks at the Events list, it should be immediately obvious that she has been invited.
+
+S5.0 View User Profile
+	With a few minutes to spare between classes, Matt explores some of the Overlunch meeting details. Because he and Charles are OverLunch Friends, Matt can see more information about Charles by viewing Charles' user profile. 
+	He discovers this by clicking Charles' name in the meeting they have both already confirmed. Charles' profile shows the other events that he has either confirmed or marked "Interested". 
 	
+  S5.1	Invite User to Friends List
+	Matt selects one of the events that Charles is Intereted in. He sees that Charles' Sister Bonnie has confirmed for the event.
+	Matt select's Bonnie's name to see her profile, and gets a message saying "You may only view user profile of people in your Friends list. Would you like to invite Bonnie to your friends list?" Matt quickly selects YES.
+	
+  S5.2	Block a user
+	Later, after Bonnie has accepted Matt's invitation to be friends, Matt notices that Bonnie's ex-boyfriend has confirmed for tomorrow's meeting and that Bonnie is not longer in the meeting's list. She must have cancelled. 
+	Mat is about to select the Cancel option from the meeting's context menu, but first, he select's Raphael's name and sees an option to Block User, which he selects. 
+	A message is displayed that explains Blocking a user works in both directions: Matt will no longer see meetings that Raphael has created, and Raphael wil no longer see any meeting created by Matt. They might still each other attached to meetings created by other users.
+	Matt selects the Confirm option. Raphael seemed like a decent guy, but it could be awkward if he wanted to join meetings with Bonnie and had just had lunch with Raphael yesterday.
+
+S6.0	Cancel and event (remove yourself from an event. It will still exist for other attached users).
+	Still looking at the details of the meeting with Raphael, Matt returns to the context menu and selects "Cancel". The confirmation message says "You will be removed from this meeting. Continue?". Matt chooses yes, and the meeting detail screen closes.
+
 
 to create: send out invites to friends (sends an email with a link)
 add friends to list: 
