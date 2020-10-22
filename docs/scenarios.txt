@@ -85,17 +85,20 @@ S5.0 View User Profile
 	A message is displayed that explains Blocking a user works in both directions: Matt will no longer see meetings that Raphael has created, and Raphael wil no longer see any meeting created by Matt. They might still each other attached to meetings created by other users.
 	Matt selects the Confirm option. Raphael seemed like a decent guy, but it could be awkward if he wanted to join meetings with Bonnie and had just had lunch with Raphael yesterday.
 
-S6.0	Cancel and event (remove yourself from an event. It will still exist for other attached users).
+S6.0	Cancel an event (remove yourself from an event. It will still exist for other attached users).
 	Still looking at the details of the meeting with Raphael, Matt returns to the context menu and selects "Cancel". The confirmation message says "You will be removed from this meeting. Continue?". Matt chooses yes, and the meeting detail screen closes.
 
+S7.0	Create an Event
 
-to create: send out invites to friends (sends an email with a link)
-add friends to list: 
+to create: 
+send out invites to friends (sends an email with a link)(done)
+add friends to list:(done) 
 invite a friend to a meeting. (done)
-invite someone to use the app. (covered in the Invite to meeting scenario)
-invite someone to be a friend? 
-Cancel an event.
-Block a user.
+invite someone to use the app. (covered in the Invite to meeting scenario)(done)
+invite someone to be a friend? (done)
+Cancel an event.(done)
+Block a user. (done)
+Create an Event.
 	
 
 QUESTIONS/NOTES:
