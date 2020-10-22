@@ -6,7 +6,28 @@ E1	Venue Endpoints:
    E1.1 GET /venues
 	Return: list of Venue objects
 	Lists information about the venues for today and tomorrow.
+
 E2	Account Endpoints:
+   E2.1 POST /account/new
+        Params: email:String, name:String, password:String
+        Return: Success object
+        Creates a new user in the database if the email is not already taken.
+
+   E2.2 POST /account/confirm
+	Params: email:String, code:String
+	Returns: Success object
+	Verifies that the user owns the given email address. Code must match the confirmation email.
+
+   E2.3 POST /account/login
+        Params: email:String, password:String
+	Return: Success object
+	Provides a token needed to access the homepage.
+
+   E2.4 GET /account/profile
+	Params: user:String
+	Return: Profile object
+	Gets the list of events a user is going to. (Unsure which info identifies the user, so just calling the parameter "user" for now.)
+
 E3	Event Endpoints:
 E4	Friend/Block Endpoints:
 
@@ -15,3 +36,8 @@ O1	Venue Objects
    O1.1 Venue = {"id": String, "name": String, "hours": Hours}
    O1.2 Hours = {"today": Span,"tomorrow": Span}
    O1.3 Span  = {"Start": time String, "End": time String}
+O2	Account Objects
+   O2.1 Success = {"success": boolean, "error": String, "token": String}
+   O2.2 Profile = {"name": String, "events": Event[]}
+O3	Event Objects
+   O3.1 Event = {<TODO>}
