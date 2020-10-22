@@ -201,6 +201,8 @@ Appendix A: Glossary
 	Meeting
 	Sort
 	User Profile
+	User Name
+	Screen Name
 	
 			
 
