@@ -40,7 +40,9 @@ Other Requirements        5
 
 
 
-Revision History in Github
+Revision History of this document is available in Github.
+
+The SRS is a living document, and as such may be modified with the consent of the majority of the development team.
 
 
 
@@ -187,9 +189,24 @@ REQ-2:
 <List any operating principles about the product, such as which individuals or roles can perform which functions under specific circumstances. These are not functional requirements in themselves, but they may imply certain functional requirements to enforce the rules.>
 6. Other Requirements
 <Define any other requirements not covered elsewhere in the SRS. This might include database requirements, internationalization requirements, legal requirements, reuse objectives for the project, and so on. Add any new sections that are pertinent to the project.>
+
 Appendix A: Glossary
+	Block
+	Cancel
+	Confirmed
+	Event
+	Filter	
+	Friend
+	Interested	
+	Meeting
+	Sort
+	User Profile
+	
+			
+
 <Define all the terms necessary to properly interpret the SRS, including acronyms and abbreviations. You may wish to build a separate glossary that spans multiple projects or the entire organization, and just include terms specific to a single project in each SRS.>
-Appendix B: Analysis Models
+Appendix B: Scenarios
+	
 <Optionally, include any pertinent analysis models, such as data flow diagrams, class diagrams, state-transition diagrams, or entity-relationship diagrams.>
 Appendix C: To Be Determined List
 <Collect a numbered list of the TBD (to be determined) references that remain in the SRS so they can be tracked to closure.>
