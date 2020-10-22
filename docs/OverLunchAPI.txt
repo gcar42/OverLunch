@@ -1,8 +1,17 @@
 OverLunch API
-A RESTFUL API returning JSON.
+A RESTFUL API returning JSON. Time Strings are ISO-8601 compliant times.
 
 ENDPOINTS:
 E1	Venue Endpoints:
+   E1.1 GET /venues
+	Return: list of Venue objects
+	Lists information about the venues for today and tomorrow.
 E2	Account Endpoints:
 E3	Event Endpoints:
 E4	Friend/Block Endpoints:
+
+OBJECTS
+O1	Venue Objects
+   O1.1 Venue = {"id": String, "name": String, "hours": Hours}
+   O1.2 Hours = {"today": Span,"tomorrow": Span}
+   O1.3 Span  = {"Start": time String, "End": time String}
