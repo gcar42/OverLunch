@@ -26,7 +26,7 @@ E2	Account Endpoints:
    E2.4 GET /account/profile
 	Params: user:String
 	Return: Profile object
-	Gets the list of events a user is going to. (Unsure which info identifies the user, so just calling the parameter "user" for now.)
+	Gets the list of events a user is going to or interested in. (Unsure which info identifies the user, so just calling the parameter "user" for now.)
 
    E2.5 GET /account/verify
         Params: token:String
@@ -37,9 +37,23 @@ E3	Event Endpoints:
    E3.1 POST /event/new
 	Params: venue_id:String, today:boolean, start:time String, end:time String, user:String, confirmed:boolean, meeting_name:String
 	Return: Success object
-	Creates a new event for the user at the event for the given time span, today or tomorrow, confirmed or tentative. (Open to change when scenario covering this added.)
+	Creates a new event for the user at the event for the given time span, today or tomorrow, confirmed or tentative. The token field will be the event ID. (Open to change when scenario covering this added.)
 
-   E3.2
+   E3.2 GET /event/friends
+	Params: user:String
+	Return: Event[]
+	Lists the events that the user's friends are going to or interested in.
+
+   E3.3 POST /event/join
+	Params: event_id:String, user:String, confirmed:boolean, start:time String, end:time String
+	Return: Success object
+	Adds the user to the specified event for the given time range, confirmed or tentative.
+
+   E3.4 POST /event/cancel
+	Params: event_id:String, user:String
+	Return: Success object
+	Removes the user from the specified event.
+
 E4	Friend/Block Endpoints:
 
 OBJECTS
