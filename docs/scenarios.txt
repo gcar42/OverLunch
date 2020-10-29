@@ -90,7 +90,16 @@ S6.0	Cancel an event (remove yourself from an event. It will still exist for oth
 	Still looking at the details of the meeting with Raphael, Matt returns to the context menu and selects "Cancel". The confirmation message says "You will be removed from this meeting. Continue?". Matt chooses yes, and the meeting detail screen closes.
 
 S7.0	Create an Event
-		*discussion notes: Select.
+	After enjoying a lunch meeting sheduled on OverLunch, Matt wants to do it again tomorrow. He opens the app on his phone, opens the OverLunch home screen and clicks the green "Plus" button to create a new event.
+	He selects VENUE_X (from a dropdown menu? From a list of venues that opens in a mew window?).
+	Once the venue is chosen, Matt can choose when he wants his event to occur. (Dev perspective: The app will use the given hours of operation for the venue to prevent a meeting being scheduled outside that time window).
+		(Time range option A)He selects 12:30 as the earliest time he could start a lunch event, and 2:30 as the latest time the event could end.
+		(Time range option B)He selects 12:30 as his earliest possible start time, and 1:30 as his latest possible start time, and then selects a 1 hour duration from the time-spinner.
+		A summary windw tells him "You are creating a new 1 hour long event, beginning tomorrow between 12:30 and 1:30 at VENUE_X. |ADD it| |EDIT it| |CANCEL it|
+			Matt selects "ADD it", creating an unconfirmed event for tomorrow.
+
+S8.0	Help!
+
 
 to create: 
 send out invites to friends (sends an email with a link)(done)
