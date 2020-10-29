@@ -63,6 +63,7 @@ O1	Venue Objects
    O1.3 Span  = {"Start": time String, "End": time String}
 O2	Account Objects
    O2.1 Success = {"success": boolean, "error": String, "token": String}
-   O2.2 Profile = {"name": String, "events": Event[]}
+   O2.2 Profile = {"display_name": String, "events": Event[]}
 O3	Event Objects
-   O3.1 Event = {<TODO>}
+   O3.1 Event = {"venue_id": String, "meeting_name": String, "today": boolean, "time": Span, "interested": Participant[], "confirmed": Participant[]}
+   O3.2 Participant = {"display_name": String, "id": String}
