@@ -28,9 +28,20 @@ S1.0 Initial Setup
 	Matt receives an (goal)invitation via email(/goal) to use OverLunch from his classmate Charles. Charles had already told Matt about the app, so Matt clicks the link. 
 	A browser window opens prompting Matt to enter his (Constraint)Oswego.edu email address(/Constraint) and select either sign-in or sign-up. 
 	He enters his email address and selects the sign-up option. He is prompted to enter a Screen Name (which is what other users will see) and to create a password for the OverLunch app. The display tells him that an email confirmation link has been sent to his address. 
-	The email will contain a link to start using OverLunch. 
+	The email will contain a link to start using OverLunch.
+   
+S2.0 View/Change Account Settings
+	Matt notices that he included a typo in his screen name. Hoping he won't have to jump through hoops to change it, he clicks the gear icon on the home screen to open the Settings options.
+	One of the items on the Settings page is User Account. That looks promising, so he clicks it. 
+	The Account Setting page that opens shows him the email address he signed up with, and his Screen Name. He is pleased to discover he only has to click his screen name and retype it in order to change it.
 
-S2.0 Browsing events
+S3.0	HELP!
+	Matt closes the User Account Settings window and spots another item on the Settings screen that interests him: "Help".
+	(Option 1) He clicks the button, causing a browser window to open to a page displaying the concise, yet exquisitely written OverLunch user manual.
+	(Option 2) He clicks the button, causing a new OverLunch screen to open, displaying the concise, yet exquisitely written OverLunch user manual.
+	Overcome by his genetic propensity for toxically masculine behavior, he decides he can figure it out on his own, and closes the browser window.
+
+S4.0 Browsing events
 	Matt clicks the link in his confirmation email and is taken to the OverLunch Login screen.
 	After entering his email address in the Email field and password in the password field, Matt clicks the login button and is shown the Overlunch home screen.
 	The home screen shows a list of cards representing the lunch events of other OverLunch users. 
@@ -39,24 +50,24 @@ S2.0 Browsing events
 		One is a plus sign that hovers near the bottom of the screen (New Event), 
 		and the other is funnel-shaped icon near the top-right of the screen (Filter and Sort options).
    
-   S2.1 Sort Events
+   S4.1 Sort Events
 	Clicking the funnel, Matt toggles the sort-order of the list of events to show the most recent events at the venues closest to his location.
 
-   S2.2 Filter Events
+   S4.2 Filter Events
 	Matt scrolls through the list of events noticing that near the end of the list the cards are… 
 		(a different color? Some visual cue to identify that these are for tomorrow, not today).
 	He is interested in meeting someone for lunch today, so he clicks the funnel icon again, and selects the filter option to show only Today's events.
 	The list updates (keeping his sort options) and tomorrow's events are no longer in the displayed list.
    
-S3.0 Select an event/ view meeting details
+S5.0 Select an event/ view meeting details
 	Matt selects the 1st even in the list, which is the one that will be occurring soonest, and a window showing more details opens. 
 	The “Detail” view shows that SCREEN_NAME_ONE and SCREEN_NAME_TWO have expressed interest in this meeting at (VENUE), which could begin as soon as 11:30 and end as late 1:45 (Event Window).
 	
-   S3.1 Join an event: Interested
+   S5.1 Join an event: Interested
 	This all sounds good to Matt. He still wants to look at other events, so he selects "I'm Interested" instead of the "I'll Be There" option, adding his name to the list with the other two users.
 	The "I'll Be There" still appears, with tool to select a specific start and end time within the broader Event Window.
 	
-   S3.1 Join an event: Confirmed 
+   S5.1 Join an event: Confirmed 
 	Shortly after Matt joins the event, the bar at the top of the event changes color and displays the word "Confirmed". SCREEN_NAME_ONE has confirmed that (s)he will be there. 
 	The the "I'll Be There" option is still available, but the time selection tool next to has vanished, replaced with "12:00 to 1:00".
 	
@@ -65,31 +76,31 @@ S3.0 Select an event/ view meeting details
 	Another dialog opens with the message: "Your classmate Charles has confirmed for lunch at VENUE, from TIME_START to TIME_END. Would you like to confirm, too?". (Verbiage subject to change, of course)
 	Matt taps "YES". His name in the detail view of the event moves from "Interested" to "Confirmed".
 
-S4.0 Invite non-user to join a meeting
+S6.0 Invite non-user to join a meeting
 	Matt thinks that his classmate Lindsey would probably like to join this meeting. He closes the Detail view (because the option to share should not be hidden) and opens the context menu for the event he just confirmed. 
 	One of the options in this menu is "Invite a guest to this meeting." He selects that option and types Lindsey's email address. In the optional Message to Guest field he types "Hi Lin. It's Matt. Join me and Chuck for lunch!", and the clicks the INVITE button.
 	*Note: OverLunch should now check for Lindsey's email address in the user database. Not finding it means Lindsey will be sent a signup link. Perhaps it can include a token that automatically shows this meeting once her signup is complete.
 		If Lindsey is a user, she will be sent a meeting invitation link via email, but when she looks at the Events list, it should be immediately obvious that she has been invited.
 
-S5.0 View User Profile
+S7.0 View User Profile
 	With a few minutes to spare between classes, Matt explores some of the Overlunch meeting details. Because he and Charles are OverLunch Friends, Matt can see more information about Charles by viewing Charles' user profile. 
 	He discovers this by clicking Charles' name in the meeting they have both already confirmed. Charles' profile shows the other events that he has either confirmed or marked "Interested". 
 	*Viewing your own profile page shows your username, email address,
 	
-  S5.1	Invite User to Friends List
+  S7.1	Invite User to Friends List
 	Matt selects one of the events that Charles is Intereted in. He sees that Charles' Sister Bonnie has confirmed for the event.
 	Matt select's Bonnie's name to see her profile, and gets a message saying "You may only view user profile of people in your Friends list. Would you like to invite Bonnie to your friends list?" Matt quickly selects YES.
 	
-  S5.2	Block a user
+  S7.2	Block a user
 	Later, after Bonnie has accepted Matt's invitation to be friends, Matt notices that Bonnie's ex-boyfriend has confirmed for tomorrow's meeting and that Bonnie is not longer in the meeting's list. She must have cancelled. 
 	Mat is about to select the Cancel option from the meeting's context menu, but first, he select's Raphael's name and sees an option to Block User, which he selects. 
 	A message is displayed that explains Blocking a user works in both directions: Matt will no longer see meetings that Raphael has created, and Raphael wil no longer see any meeting created by Matt. They might still each other attached to meetings created by other users.
 	Matt selects the Confirm option. Raphael seemed like a decent guy, but it could be awkward if he wanted to join meetings with Bonnie and had just had lunch with Raphael yesterday.
 
-S6.0	Cancel an event (remove yourself from an event. It will still exist for other attached users).
+S8.0	Cancel an event (remove yourself from an event. It will still exist for other attached users).
 	Still looking at the details of the meeting with Raphael, Matt returns to the context menu and selects "Cancel". The confirmation message says "You will be removed from this meeting. Continue?". Matt chooses yes, and the meeting detail screen closes.
 
-S7.0	Create an Event
+S9.0	Create an Event
 	After enjoying a lunch meeting sheduled on OverLunch, Matt wants to do it again tomorrow. He opens the app on his phone, opens the OverLunch home screen and clicks the green "Plus" button to create a new event.
 	He selects VENUE_X (from a dropdown menu? From a list of venues that opens in a mew window?).
 	Once the venue is chosen, Matt can choose when he wants his event to occur. (Dev perspective: The app will use the given hours of operation for the venue to prevent a meeting being scheduled outside that time window).
@@ -98,7 +109,7 @@ S7.0	Create an Event
 		A summary windw tells him "You are creating a new 1 hour long event, beginning tomorrow between 12:30 and 1:30 at VENUE_X. |ADD it| |EDIT it| |CANCEL it|
 			Matt selects "ADD it", creating an unconfirmed event for tomorrow.
 
-S8.0	Help!
+	
 
 
 to create: 
