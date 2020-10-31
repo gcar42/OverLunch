@@ -54,7 +54,26 @@ E3	Event Endpoints:
 	Return: Success object
 	Removes the user from the specified event.
 
+   E3.5 POST /event/invite
+	Params: event_id:String, email:String, message:String
+	Return: Success object
+	If email corresponds to a user, sends a meeting link via email and adds event_id to the user's invite list. . If not a user, sends a sign-up link and stores event_id to be added when the new user signs up.
+
 E4	Friend/Block Endpoints:
+   E4.1 POST /friend/request
+	Params: user:String, friend:String
+	Return: Success object
+	Adds friend to the list of user's friends. User is now pending in friend's friends list unless freind requested first, in which case they are now confirmed friends.
+
+   E4.2 POST /friend/block
+	Params: user:String, block:String
+	Return: Success object
+	Adds block to user's blocked list. Parameter name only matters for determining who can unblock.
+
+   E4.3 POST /friend/unblock
+	Params: user:String, blocked:String
+	Return: Success object
+	Removes blocked from user's blocked list. This will not affect the blocked status if it was mutual before.
 
 OBJECTS
 O1	Venue Objects
