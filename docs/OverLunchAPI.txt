@@ -55,19 +55,24 @@ E3	Event Endpoints:
 	Lists the events that the user's friends are going to or interested in.
 
    E3.3 POST /event/join
-	Params: event_id:String, user:String, confirmed:boolean, start:time String, end:time String
+	Params: event_id:String, user:String, confirmed:boolean
 	Return: Success object
-	Adds the user to the specified event for the given time range, confirmed or tentative.
+	Adds the user to the specified event, confirmed or tentative.
 
    E3.4 POST /event/cancel
 	Params: event_id:String, user:String
 	Return: Success object
-	Removes the user from the specified event.
+	Removes the user from the specified event. If the user is the host, the host field stays the same. If no one is confirmed and the host cancels, the event is deleted. If the host has canceled and the last confirmed user cancels, the event is deleted.
 
    E3.5 POST /event/invite
 	Params: event_id:String, email:String, message:String
 	Return: Success object
-	If email corresponds to a user, sends a meeting link via email and adds event_id to the user's invite list. . If not a user, sends a sign-up link and stores event_id to be added when the new user signs up.
+	If email corresponds to a user, sends a meeting link via email and adds event_id to the user's invite list. . If not a user, sends a sign-up link and stores event_id to be added when the new user signs up. If the email does not include a domain, assumes @oswego.edu. If there is a domain other than @oswego.edu, returns an error message and does not send any email.
+
+   E3.6 POST /event/confirm
+	Params: event_id:String, user:String, start:time String, end:time String
+	Return: Success object
+	Confirms the time range of the specified event hosted by the user.
 
 E4	Friend/Block Endpoints:
    E4.1 POST /friend/request
@@ -95,5 +100,5 @@ O2	Account Objects
    O2.2 Profile = {"display_name": String, "events": Event[]}
    O2.3 Friends = {"confirmed": Participant[], "pending": Participant[]}
 O3	Event Objects
-   O3.1 Event = {"venue_id": String, "meeting_name": String, "today": boolean, "time": Span, "interested": Participant[], "confirmed": Participant[]}
+   O3.1 Event = {"venue_id": String, "meeting_name": String, "today": boolean, "time": Span, "interested": Participant[], "confirmed": Participant[], "host": Participant, "host_confirmed": boolean}
    O3.2 Participant = {"display_name": String, "id": String}
