@@ -33,6 +33,16 @@ E2	Account Endpoints:
         Return: user:String
 	Determines who the token is valid for.
 
+   E2.6 GET /account/friends
+	Params: user:String
+	Return: Friends object
+	Returns a list of friends, seperated into confirmed and pending.
+
+   E2.7 POST /account/rename
+	Params: user:String, name:String
+	Return: Success objects
+	Replaces the user's display name in the database with the new name field.
+
 E3	Event Endpoints:
    E3.1 POST /event/new
 	Params: venue_id:String, today:boolean, start:time String, end:time String, user:String, confirmed:boolean, meeting_name:String
@@ -83,6 +93,7 @@ O1	Venue Objects
 O2	Account Objects
    O2.1 Success = {"success": boolean, "error": String, "token": String}
    O2.2 Profile = {"display_name": String, "events": Event[]}
+   O2.3 Friends = {"confirmed": Participant[], "pending": Participant[]}
 O3	Event Objects
    O3.1 Event = {"venue_id": String, "meeting_name": String, "today": boolean, "time": Span, "interested": Participant[], "confirmed": Participant[]}
    O3.2 Participant = {"display_name": String, "id": String}
