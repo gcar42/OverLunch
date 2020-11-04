@@ -1,3 +1,10 @@
+
+11-4-20 
+** DON'T USE THIS DOCUMENT   **
+** See Appendix B in the srs **
+
+
+
 OverLunch User Scenarios
 Scenario functions:
 Initial setup
@@ -107,28 +114,6 @@ S9.0	Create an Event
 		(Time range option A)He selects 12:30 as the earliest time he could start a lunch event, and 2:30 as the latest time the event could end.
 		(Time range option B)He selects 12:30 as his earliest possible start time, and 1:30 as his latest possible start time, and then selects a 1 hour duration from the time-spinner.
 		A summary windw tells him "You are creating a new 1 hour long event, beginning tomorrow between 12:30 and 1:30 at VENUE_X. |ADD it| |EDIT it| |CANCEL it|
-			Matt selects "ADD it", creating an unconfirmed event for tomorrow.
+			Matt selects "ADD it", creating an unconfirmed event for tomorrow.	
 
-	
-
-
-to create: 
-send out invites to friends (sends an email with a link)(done)
-add friends to list:(done) 
-invite a friend to a meeting. (done)
-invite someone to use the app. (covered in the Invite to meeting scenario)(done)
-invite someone to be a friend? (done)
-Cancel an event.(done)
-Block a user. (done)
-Create an Event.
-	
-
-QUESTIONS/NOTES:
-Do we need to display a list of friends? (YES)
-       Select a friend to see his events? (Select a friend to see his user profile, which includes events to which the user is attached.)
-  
-How to handle notifications if this is a web-app?
-
-I (Greg) started using the term "event" instead of "availability", following the lead of our interviewed users.
-Instead of saying "Tentative" and "Confirmed", I suggest users are associate with events as either "Interested", or "Confirmed".     
 	
