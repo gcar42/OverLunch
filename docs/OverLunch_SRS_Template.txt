@@ -168,16 +168,16 @@ Appendix A: Glossary
 				An event with any confirmed user which is cancelled by a confirmed or interested user
 				An event with confirmed users which is cancelled by the event's creator.
 				 
-	Confirmed (adj)	(1)A user who has committed to attend an event is considered Confirmed fir that event. (2)An event with confirmed users is considered to be a confirmed event.
-	Event (n)	An event consists of a time frame that a user selects for a potential lunch meeting, and the venue at which the meeting could occur. An event also requires at least one attached (confirmed or interested) user.
-	Filter		A filter is a limitation placed on the events displayed in a list. For example, a user might select a specific venue as a filter in order to limit his displayed events to those occurring at that venue.	
-	Friend		
-	Interested	
-	Meeting
-	Sort
-	User Profile
-	User Name
-	Screen Name
+	Confirmed (adj)		(1)A user who has committed to attend an event is considered Confirmed fir that event. (2)An event with confirmed users is considered to be a confirmed event.
+	Event (n)		An event consists of a time frame that a user selects for a potential lunch meeting, and the venue at which the meeting could occur. An event also requires at least one attached (confirmed or interested) user.
+	Filter			A filter is a limitation placed on the events displayed in a list. For example, a user might select a specific venue as a filter in order to limit his displayed events to those occurring at that venue.	
+	Friend			A Friend is an OverLunch user who has accepted another user's friendship request. Firends can view each others' profiles, which show all of t he events that the friend has either confirmed or is interested in.
+	Interested (adj)	Interessted is a state that exists between a user and a meeting, in which a user identifies a meeting one he might attend.
+	Meeting (n)		Synonymous with event.
+	Sort(v)			To arrange the events in a list according to an order of preference.
+	User Profile		
+	User Name		This is the unique name that OverLunch uses to identify a user. It consists of the prefix of the user's oswego.edu email address, and it may not be changed by the user.
+	Screen Name		This is a name chosen by users which identify them to other OverLunch users. It is the name that will be displayed when the user joins an event, and it may be changed at the user's discretion.
 	
 			
 
