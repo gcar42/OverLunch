@@ -102,5 +102,5 @@ O2	Account Objects
    O2.2 Profile = {"display_name": String, "events": Event[]}
    O2.3 Friends = {"confirmed": Participant[], "pending": Participant[]}
 O3	Event Objects
-   O3.1 Event = {"venue_id": String, "meeting_name": String, "today": boolean, "time": Span, "interested": Participant[], "confirmed": Participant[], "host": Participant, "host_confirmed": boolean}
+   O3.1 Event = {"event_id": String, "venue_id": String, "meeting_name": String, "today": boolean, "time": Span, "interested": Participant[], "confirmed": Participant[], "host": Participant, "host_confirmed": boolean}
    O3.2 Participant = {"display_name": String, "id": String}
