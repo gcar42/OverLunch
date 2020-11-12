@@ -23,6 +23,8 @@ E2	Account Endpoints:
 	Return: Success object
 	Provides a token needed to access the homepage.
 
+(All endpoints after this point require a token:String parameter for authentication.)
+
    E2.4 GET /account/profile
 	Params: user:String
 	Return: Profile object
