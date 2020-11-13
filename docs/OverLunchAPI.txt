@@ -92,6 +92,34 @@ E4	Friend/Block Endpoints:
 	Return: Success object
 	Removes blocked from user's blocked list. This will not affect the blocked status if it was mutual before.
 
+PARAMETERS
+email:String
+	Standard email form, with or without "@oswego.edu", which is assumed if missing.
+name:String
+	Display name, no limits on content except max of 40(?) characters.
+password:String
+	Hashed password in same form as stored in database. (Pending security analysis/decisions.)
+code:String
+	Identifier attached to link placed in confirmation email. Eight (?) alphanumeric characters, distinguishing by capitalization.
+user:String, friend:String, block:String, blocked:String
+	The user name of the user, matching their email address, but without the "@oswego.edu" component. This is unique to each account. The parameters "friend", "block", and "blocked" are all identical to "user", but differentiate the target of the action.
+token:String
+	The token used for authentication. (Length and style to be determined by security decisions.)
+venue_id:String
+	A unique name for the venue, likely matching the venue name until conflicts appear.
+today:boolean
+	True means today; false means tomorrow.
+start:time String, end:time String
+	ISO-8601 compliant times.
+confirmed:boolean
+	True means confirmed; false means interested.
+meeting_name:String
+	An arbitrary string up to 40(?) characters to be displayed as a meeting's name.
+event_id:String
+	A unique name for an event, likely just a counter for prototypes.
+message:String
+	An arbitrary string of up 400(?) characters to be included in the invitation.
+
 OBJECTS
 O1	Venue Objects
    O1.1 Venue = {"id": String, "name": String, "hours": Hours}
