@@ -32,8 +32,8 @@ E2	Account Endpoints:
 
    E2.5 GET /account/verify
         Params: token:String
-        Return: user:String
-	Determines who the token is valid for.
+        Return: Success object
+	Determines who the token is valid for. The "token" field will hold the associated user name.
 
    E2.6 GET /account/friends
 	Params: user:String
