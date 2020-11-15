@@ -50,3 +50,25 @@ def list_friends(user: String, token: String):
 @app.post("/account/rename")
 def change_display_name(user: String, name: String, token: String):
     return {"success": False, "error": "No such user", "token": ""}
+
+# event endpoints
+
+@app.post("/event/new")
+def create_event(venue_id: String, today: bool, start: String, end: String, user: String, confirmed: bool, meeting_name: String, token: String):
+    return {"success": False, "error": "Venue not open in requested time range", "token": ""}
+ 
+@app.get("/event/friends")
+def list_friend_events(user: String, token: String)
+    return []
+ 
+@app.post("/event/cancel")
+def cancel_event(evetn_id: String, user: String, token: String):
+    return {"success": False, "error": "No such event", "token": ""}
+ 
+@app.post("/event/invite")
+def invite_to_event(event_id: String, email: String, message: String, token: String):
+    return {"success": False, "error": "Invalid email domain", "token": ""}
+ 
+@app.post("/event/confirm")
+def confirm_event(event_id: String, user: String, start: String, end: String, token: String):
+    return {"success": False, "error": "No such event", "token": ""}
