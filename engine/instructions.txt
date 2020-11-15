@@ -1,0 +1,10 @@
+Requires Python 3.6+
+
+Install dependencies:
+
+pip install fastapi
+pip install uvicorn
+
+Run server:
+
+uvicorn main:app --reload
