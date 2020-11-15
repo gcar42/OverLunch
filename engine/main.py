@@ -72,3 +72,17 @@ def invite_to_event(event_id: String, email: String, message: String, token: Str
 @app.post("/event/confirm")
 def confirm_event(event_id: String, user: String, start: String, end: String, token: String):
     return {"success": False, "error": "No such event", "token": ""}
+
+# friend/block endpoints
+
+@app.post("/friend/request")
+def request_friend(user: String, friend: String, token: String):
+    return {"success": False, "error": "No such user available to request", "token": ""}
+
+@app.post("/friend/block")
+def block_user(user: String, block: String, token: String):
+    return {"success": False, "error": "No such user available to block", "token": ""}
+
+@app.post("/friend/unblock")
+def unblock_user(user: String, blocked: String, token: String):
+    return {"success": False, "error": "No such user available to unblock", "token": ""}

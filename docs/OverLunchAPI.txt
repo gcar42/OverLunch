@@ -80,7 +80,7 @@ E4	Friend/Block Endpoints:
    E4.1 POST /friend/request
 	Params: user:String, friend:String
 	Return: Success object
-	Adds friend to the list of user's friends. User is now pending in friend's friends list unless freind requested first, in which case they are now confirmed friends.
+	Adds friend to the list of user's friends. User is now pending in friend's friends list unless friend requested first, in which case they are now confirmed friends.
 
    E4.2 POST /friend/block
 	Params: user:String, block:String
