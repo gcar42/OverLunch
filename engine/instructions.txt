@@ -5,6 +5,15 @@ Install dependencies:
 pip install fastapi
 pip install uvicorn
 
+(If using the database connection:)
+
+pip install pymongo
+pip install dnspython
+
 Run server:
 
 uvicorn main:app --reload
+
+
+
+It may be necessary to use pip3 (when Python 2 is installed) or the --user tag (when running without administrative privileges).
