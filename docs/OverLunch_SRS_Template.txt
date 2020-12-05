@@ -1,276 +1,218 @@
 ﻿Software Requirements Specification
 for
 OverLunch
-Version 0.5 approved
+Document Version 0.9 
 
-Prepared by <Greg Carrico
+Prepared by 
+Greg Carrico
 Benjamin Groman
-Shaun Godfrey>
+Shaun Godfrey
 SUNY Oswego
-9/29/2020
- 
-Contents
-Introduction	2
-Purpose	2
-Product Scope	2
-Overall Description	2
-Product Overview	2
-Goals	2
-Functionators	3
-2. Expectors	3
-5. Design and Implementation Constraints	4
-6. User Documentation	5
-7. Assumptions and Dependencies	5
-3. External Interface Requirements	5
-Appendix A: Glossary	8
-Appendix B: SCENARIOS:	8
+12/5/2020
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*The template used to create this document is Copyrighted © 1999 by Karl E. Wiegers, and was used with permission.
+Introduction	3
+Purpose	3
+Product Scope	3
+Overall Description	3
+Product Overview	3
+Goals	3
+Functionators	4
+Expectors	4
+Design and Implementation Constraints	5
+Appendix A: Glossary	6
+Appendix B: Scenarios	8
+S1.0 Initial Setup	8
+S2.0 View/Change Account Settings	8
+S3.0 HELP!	8
+S4.0 Browsing events	8
+S4.1  Sort Events	9
+S4.2  Filter Events	9
+S5.0 Select an event/ view meeting details	9
+S5.1  Join an event: Interested	9
+S5.2  Join an event: Confirmed	9
+S6.0 Invite non-user to join a meeting	10
+S7.0 View User Profile	10
+S7.1 Invite User to Friends List	10
+S7.2 Block a user	10
+S8.0 Cancel an event	11
+S9.0 Create an Event	11
 
 Introduction
-The SRS is a living document, and as such may be modified with the consent of the majority of the development team. A record of all changes made to this document can be found in the Revision History of the OverLunch project on Github.<link to be inserted>
-
-   Purpose 
-The purpose of this document is to specify the design, development, implementation, and testing of an application intended to aid Suny Oswego students in finding a lunch companion on little to no advanced notice. This document will specify system requirements, goals, scenarios, and solutions , and will list qualities, functional requirements, and constraints of the system under development. This document will also describe quality assurance measures and testing procedures.
-   Product Scope
-This product should include a user interface that allows users to browse, create, and view detailed information about events, and related functions as outlined in section 2.2 Goals. Specifically outside the scope of this product is providing a venue’s menu. This product should make a reasonable effort to identify the times of operation for a given venue, but makes no claims as to the accuracy of this information.
+This SRS is a living document, and may be modified with the consent of the majority of the development team. A record of all changes made to this document can be found in the Revision History of the OverLunch project on Github. < https://github.com/gcar42/OverLunch.git>
+Purpose 
+The purpose of this document is to specify the design, development, implementation, and testing of an application intended to aid SUNY Oswego students in finding a lunch companion on little to no advanced notice. This document will specify system requirements, goals, scenarios, and solutions, and will list qualities, functional requirements, and constraints of the system under development. This document will also describe quality assurance measures and testing procedures.
+Product Scope
+This product should include a user interface that allows users to browse, create, and view detailed information about events. The user interface should also support related functions as outlined in section 2.2 Goals. Providing menus (of available food) is outside the scope of this project. This product should make a reasonable effort to identify the times of operation for a given venue, but makes no claims as to the accuracy of this information.
 Overall Description
 
-   Product Overview
-The OverLunch application is intended to aid SUNY Oswego students in finding a lunch companion on little to no advanced notice. Users of the app are primarily SUNY Oswego students, but anyone with a @oswego.edu email address may create an account and use the application. The application is accessible via a web interface(...)
-   Goals
+Product Overview
+The OverLunch application is intended to aid SUNY Oswego students in finding a lunch companion on little to no advanced notice. Users of the app are primarily SUNY Oswego students, but anyone with a @oswego.edu email address may create an account and use the application. The application is accessible via a web interface.
+Goals
 The goals enumerated in this section have been derived or taken directly from documents, conversations, and various communications between the OverLunch development team and the other stakeholders, such as potential users of the OverLunch app. These goals are categorized in three groups, functionators, expectors, and excitors, defined thus:
 Functionators are goals that represent the development of a minimally viable product. A product developed with only these goals would not be expected to satisfy the objectives of the OverLunch project. Rather these goals should be viewed as elemental components of a more complete and desirable product.
 Expectors are goals that represent the expected properties of the completed product under development. If implemented, these goals are likely to lead to a satisfying final product that achieves the OverLunch Project’s desired core functionality.
 Excitors are goals that might be less obvious, but add value and possibly a “wow” factor to the final product.
       Functionators
-	GF1
-	A user should be able to create an event
-	GF2
-	A user should be able to browse events
-	GF3
-	A user should be able to join an event
-	GF3.1
-	A user should be able to join an event, interested
-	GF3.2
-	A user should be able to join an event, confirmed
-	GF4
-	A user should be able to cancel an event
-	GF5
-	A user should be able to remove self from an event
-	GF6
-	A User should be able to see detailed information about an event
-	GF6.1
-	Event details should include users who have tagged the event as “interested”
-	GF6.2
-	Event details should include users who have confirmed they will attend the event.
-	GF6.3
-	Event details for unconfirmed events should include the time range in which the event could occur.
-	GF6.3
-	Event details should include the name of the venue selected for the event.	
+	GF1 | A user should be able to create an event.
+	GF2 | A user should be able to browse events.
+	GF3 | A user should be able to join an event.
+		GF3.1 | A user should be able to join an event, interested.
+		GF3.2 | A user should be able to join an event, confirmed.
+	GF4 | A user should be able to cancel an event.
+	GF5 | A user should be able to remove self from an event.
+	GF6 | A User should be able to see detailed information about an event.
+		GF6.1 | Event details should include users who have tagged the event as
+“interested.”
+GF6.2 | Event details should include users who have confirmed they will attend 
+the event.
+GF6.3 | Event details for unconfirmed events should include the time range in 
+which the event could occur.
+		GF6.4 | Event details should include the name of the venue selected for the 
+event.	
 
       Expectors
-	GE1
-	The overlunch app should allow users to request permission of other users to add them to a friends list.
-	GE2
-	A user should be able to accept a request to be added to a friends list.
-	GE2.1
-	A user should be able to decline a request to be added to a friends list.
-	GE2.3
-	Friendship is a mutual relationship ( it applies to both parties. If I grant a friendship permission, the requestor becomes my friend)
-	GE3
-	A user should be able to sort events (criteria tbd)
-	GE4
-	A user should be able to filter events (criteria tbd)
-	GE5
-	A user should be able to block other users
-	GE5.1
-	A blocked user should not be able to view the blocking user’s profile.
-	GE5.2
-	A blocked user should not be able to see events created by the blocking user.
-	GE6
-	A user should be able to set default event parameters
-	GE6.1 
-	Default event parameters should include venue
-	GE6.2
-	Default event parameters should include a time range
+GE1 | The OverLunch app should allow users to request permission of other users to add them to a friends list.
+	GE2 | A user should be able to accept a request to be added to a friends list.
+		GE2.1 | A user should be able to decline a request to be added to a friends list.
+GE2.3 | Friendship is a mutual relationship. (It applies to both parties. If I grant a 
+friendship permission, the requestor becomes my friend).
+	GE3 | A user should be able to sort events.
+	GE4 | A user should be able to filter events.
+	GE5 | A user should be able to block other users.
+		GE5.1 | A blocked user should not be able to view the blocking user’s profile.
+		GE5.2 | A blocked user should not be able to see events created by the blocking user.
+	GE6 | A user should be able to set default event parameters.
+		GE6.1 | Default event parameters should include venue.
+		GE6.2 | Default event parameters should include a time range.
 
    Design and Implementation Constraints
-<Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).>
-	C1
-	The OverLunch app shall restrict the time range for scheduling events to Today and Tomorrow.
-	C2
-	The OverLunch app shall not retain a record of events or related data outside the range of Today and Tomorrow.
-	C3
-	Users of the OverLunch app must have an @oswego.edu email address.
-	C4
-	The OverLunch app should not permit events to be scheduled outside of a chosen venue's hours of operation, as provided by the venue;
-	C5
-	The OverLunch Project shall be completed by (DATE).
-	C6
-	The OverLunch app shall take reasonable steps to protect user data.
-	C6.1
-	Reasonable steps shall be determined by the agreement of the majority of the development team.
-
-   User Documentation
-<List the user documentation components (such as user manuals, on-line help, and tutorials) that will be delivered along with the software. Identify any known user documentation delivery formats or standards.>
-   
-   Assumptions and Dependencies
-<List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).>
-
-External Interface Requirements
-   1. User Interfaces
-<Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed. Details of the user interface design should be documented in a separate user interface specification.>
-   2. Hardware Interfaces
-<Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.>
-   3. Software Interfaces
-<Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Refer to documents that describe detailed application programming interface protocols. Identify data that will be shared across software components. If the data sharing mechanism must be implemented in a specific way (for example, use of a global data area in a multitasking operating system), specify this as an implementation constraint.>
-   4. Communications Interfaces
-<Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on. Define any pertinent message formatting. Identify any communication standards that will be used, such as FTP or HTTP. Specify any communication security or encryption issues, data transfer rates, and synchronization mechanisms.>
-
-System Features
-<This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.>
-   5. System Feature 1
-<Don’t really say “System Feature 1.” State the feature name in just a few words.>
-4.1.1        Description and Priority
-<Provide a short description of the feature and indicate whether it is of High, Medium, or Low priority. You could also include specific priority component ratings, such as benefit, penalty, cost, and risk (each rated on a relative scale from a low of 1 to a high of 9).>
-4.1.2        Stimulus/Response Sequences
-<List the sequences of user actions and system responses that stimulate the behavior defined for this feature. These will correspond to the dialog elements associated with use cases.>
-4.1.3        Functional Requirements
-<Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute the use case. Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available.>
-
-
-<Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind.>
-
-
-REQ-1:        
-REQ-2:        
-   6. System Feature 2 (and so on)
-5. Other Nonfunctional Requirements
-   1. Performance Requirements
-<If there are performance requirements for the product under various circumstances, state them here and explain their rationale, to help the developers understand the intent and make suitable design choices. Specify the timing relationships for real time systems. Make such requirements as specific as possible. You may need to state performance requirements for individual functional requirements or features.>
-   2. Safety Requirements
-<Specify those requirements that are concerned with possible loss, damage, or harm that could result from the use of the product. Define any safeguards or actions that must be taken, as well as actions that must be prevented. Refer to any external policies or regulations that state safety issues that affect the product’s design or use. Define any safety certifications that must be satisfied.>
-   3. Security Requirements
-<Specify any requirements regarding security or privacy issues surrounding use of the product or protection of the data used or created by the product. Define any user identity authentication requirements. Refer to any external policies or regulations containing security issues that affect the product. Define any security or privacy certifications that must be satisfied.>
-   4. Software Quality Attributes
-<Specify any additional quality characteristics for the product that will be important to either the customers or the developers. Some to consider are: adaptability, availability, correctness, flexibility, interoperability, maintainability, portability, reliability, reusability, robustness, testability, and usability. Write these to be specific, quantitative, and verifiable when possible. At the least, clarify the relative preferences for various attributes, such as ease of use over ease of learning.>
-   5. Business Rules
-<List any operating principles about the product, such as which individuals or roles can perform which functions under specific circumstances. These are not functional requirements in themselves, but they may imply certain functional requirements to enforce the rules.>
-6. Other Requirements
-<Define any other requirements not covered elsewhere in the SRS. This might include database requirements, internationalization requirements, legal requirements, reuse objectives for the project, and so on. Add any new sections that are pertinent to the project.>
+Limitations to the design and development of OverLunch include the following:
+C1 | The OverLunch app shall restrict the time range in which events may be scheduled to 
+         Today and Tomorrow.
+C2 | The OverLunch app shall not retain a record of events or related data outside the range of 
+         Today and Tomorrow.
+	C3 | Users of the OverLunch app must have an @oswego.edu email address.
+C4 | The OverLunch app should not permit events to be scheduled outside of a chosen venue's 
+         hours of operation, as provided by the venue.
+	C5 | The OverLunch Project shall be completed by December 11, 2020.
+	C6 | The OverLunch app shall take reasonable steps to protect user data.
+C6.1 | Reasonable steps shall be determined by the agreement of the majority of the 
+            development team.
 
 Appendix A: Glossary
-	Block (v)	To block a user is to deny the blocked user the ability to see or join events created by the user who initiates the block. Blocking is reflexive, so the user initating may no longer view or join events created by the blocked user.
-	Cancel (v)	Cancelling an event has two possible outcomes.
-			    1. Deleted from the events list
-				An event with no other interested or confirmed users which is cancelled by the only attached user.
-				An event with no confirmed users which is cancelled by the event's host (Event Creator)
-			    1. Remain in the events list with the cancelling user removed from the event
-				An event with any confirmed user which is cancelled by a confirmed or interested user
-				An event with confirmed users which is cancelled by the event's creator.
-				 
-	Confirmed (adj)		(1)A user who has committed to attend an event is considered Confirmed fir that event. (2)An event with confirmed users is considered to be a confirmed event.
-	Event (n)		An event consists of a time frame that a user selects for a potential lunch meeting, and the venue at which the meeting could occur. An event also requires at least one attached (confirmed or interested) user.
-	Filter			A filter is a limitation placed on the events displayed in a list. For example, a user might select a specific venue as a filter in order to limit his displayed events to those occurring at that venue.	
-	Friend			A Friend is an OverLunch user who has accepted another user's friendship request. Firends can view each others' profiles, which show all of t he events that the friend has either confirmed or is interested in.
-	Interested (adj)	Interessted is a state that exists between a user and a meeting, in which a user identifies a meeting one he might attend.
-	Meeting (n)		Synonymous with event.
-	Sort(v)			To arrange the events in a list according to an order of preference.
-	User Profile		
-	User Name		This is the unique name that OverLunch uses to identify a user. It consists of the prefix of the user's oswego.edu email address, and it may not be changed by the user.
-	Screen Name		This is a name chosen by users which identify them to other OverLunch users. It is the name that will be displayed when the user joins an event, and it may be changed at the user's discretion.
-	
-			
+Block (a user)(v)	
+To block a user is to deny the blocked user the ability to see or join events created by the user who initiates the block. Blocking is symmetric, so the user initiating may no longer view or join events created by the blocked user.
+Cancel (an event)(v)	
+A user canceling an event is removed from that event. If neither the host nor any other confirmed user remains, the event is deleted.	 
+Confirmed (adj)
+The status of a user in relation to an event, indicating that the user intends to be present at the given event. where a user who has committed to attend an event is considered Confirmed for that event. 
+The status of an event, indicating that at least one user is confirmed to attend.
+Event (n)
+An event is the specification of a time frame and a venue by a user for either a potential (interested) or confirmed lunch meeting.
+Filter (n)
+A filter is a limitation placed on the events displayed in a list. For example, a user might select a specific venue as a filter in order to restrict his displayed events to those occurring at that venue.	
+Friend (n)
+A Friend is an OverLunch user who has accepted another user's friendship request. Friends can view each other’s profiles, which show all of the events that the friend has either confirmed or is interested in.
+Interested (adj)	
+The status of a user in relation to a meeting, indicating that the user might attend the event.
+Meeting (n)
+ Synonymous with “event”.
+Sort(v)
+ To arrange the events in a list according to an order of preference.
+User Profile (n)
+Specific information about a user, including his Screen Name, Username, and any events to which the user is either confirmed or interested.
+The user interface screen displaying user profile information. Note that the user profile screen displays a different set of information to the profile’s owner than to other users.
+Username
+This is the unique name that OverLunch uses to identify a user. It consists of the prefix of the user's oswego.edu email address, and it may not be changed by the user.
+Screen Name
+This is a name chosen by the user which identifies them to other OverLunch users. It is the name that will be displayed when the user joins an event, and it may be changed at the user's discretion.
 
-<Define all the terms necessary to properly interpret the SRS, including acronyms and abbreviations. You may wish to build a separate glossary that spans multiple projects or the entire organization, and just include terms specific to a single project in each SRS.>
-
-Appendix B: SCENARIOS:
+Appendix B: Scenarios
    S1.0 Initial Setup
-	Matt receives an (goal)invitation via email(/goal) to use OverLunch from his classmate Charles. Charles had already told Matt about the app, so Matt clicks the link. 
-	A browser window opens prompting Matt to enter his (Constraint)Oswego.edu email address(/Constraint) and select either sign-in or sign-up. 
-	He enters his email address and selects the sign-up option. He is prompted to enter a Screen Name (which is what other users will see) and to create a password for the OverLunch app. The display tells him that an email confirmation link has been sent to his address. 
-	The email will contain a link to start using OverLunch.
+Matt receives an invitation via email to use OverLunch from his classmate Charles. Charles had already told Matt about the app, so Matt clicks the link. 
+A browser window opens prompting Matt to enter his Oswego.edu email address and select either sign-in or sign-up. 
+He enters his email address and selects the sign-up option. He is prompted to enter a Screen Name (which is what other users will see) and to create a password for the OverLunch app. The display tells him that an email confirmation link has been sent to his address. 
+	The email will contain a link to start using the OverLunch app.
    
    S2.0 View/Change Account Settings
-	Matt notices that he included a typo in his screen name. Hoping he won't have to jump through hoops to change it, he clicks the gear icon on the home screen to open the Settings options.
+Matt notices that he included a typo in his screen name. Hoping he won't have to jump through hoops to change it, he clicks the gear icon on the home screen to open the Settings options.
 	One of the items on the Settings page is User Account. That looks promising, so he clicks it. 
-	The Account Setting page that opens shows him the email address he signed up with, and his Screen Name. He is pleased to discover he only has to click his screen name and retype it in order to change it.
+The Account Setting page that opens shows him the email address he signed up with, and his Screen Name. He is pleased to discover he only has to click his screen name and retype it in order to change it.
 
    S3.0	HELP!
-	Matt closes the User Account Settings window and spots another item on the Settings screen that interests him: "Help".
-	(Option 1) He clicks the button, causing a browser window to open to a page displaying the concise, yet exquisitely written OverLunch user manual.
-	(Option 2) He clicks the button, causing a new OverLunch screen to open, displaying the concise, yet exquisitely written OverLunch user manual.
-	Overcome by his genetic propensity for toxically masculine behavior, he decides he can figure it out on his own, and closes the browser window.
+Matt closes the User Account Settings window and spots another item on the Settings screen that interests him: "Help".
+(Option 1) He clicks the button, causing a browser window to open to a page displaying the concise, yet exquisitely written OverLunch user manual.
+(Option 2) He clicks the button, causing a new OverLunch screen to open, displaying the concise, yet exquisitely written OverLunch user manual.
+Overcome by his genetic propensity for toxically masculine behavior, he decides he can figure it out on his own, and closes the browser window.
 
    S4.0 Browsing events
 	Matt clicks the link in his confirmation email and is taken to the OverLunch Login screen.
-	After entering his email address in the Email field and password in the password field, Matt clicks the login button and is shown the Overlunch home screen.
+After entering his email address in the Email field and password in the password field, Matt clicks the login button and is shown the Overlunch home screen.
 	The home screen shows a list of cards representing the lunch events of other OverLunch users. 
-	He notices that the events occurring soonest are on the top of the list. (default sort, no filters).
-	Aside from the event tiles, he sees 2 obvious buttons:
-		One is a plus sign that hovers near the bottom of the screen (New Event), 
-		and the other is funnel-shaped icon near the top-right of the screen (Filter and Sort options).
+	He notices that the events occurring sooner are on the top of the list. (default sort, no filters).
+Aside from the event tiles, he sees 2 obvious buttons. One is a plus sign that hovers near the bottom of the screen (New Event), and the other is a funnel-shaped icon near the top-right of the screen (Filter and Sort options).
    
-   	S4.1 Sort Events
-	Clicking the funnel, Matt toggles the sort-order of the list of events to show the most recent events at the venues closest to his location.
+   	S4.1 	Sort Events
+Clicking the funnel, Matt toggles the sort-order of the list of events to show the most recent events at the venues closest to his location.
 
-   	S4.2 Filter Events
-	Matt scrolls through the list of events noticing that near the end of the list the cards are… 
-		(a different color? Some visual cue to identify that these are for tomorrow, not today).
-	He is interested in meeting someone for lunch today, so he clicks the funnel icon again, and selects the filter option to show only Today's events.
-	The list updates (keeping his sort options) and tomorrow's events are no longer in the displayed list.
+   	S4.2 	Filter Events
+Matt scrolls through the list of events noticing that near the end of the list the cards are… 
+	(a different color? Some visual cue to identify that these are for tomorrow, not today).
+He is interested in meeting someone for lunch today, so he clicks the funnel icon again, and selects the filter option to show only Today's events.
+The list updates (keeping his sort options) and tomorrow's events are no longer in the displayed list.
    
    S5.0 Select an event/ view meeting details
-	Matt selects the 1st even in the list, which is the one that will be occurring soonest, and a window showing more details opens. 
-	The “Detail” view shows that SCREEN_NAME_ONE and SCREEN_NAME_TWO have expressed interest in this meeting at (VENUE), which could begin as soon as 11:30 and end as late 1:45 (Event Window).
+Matt selects the 1st event in the list, which is the one that will be occurring soonest, and a window showing more details opens. 
+The “Detail” view shows that SCREEN_NAME_ONE and SCREEN_NAME_TWO have expressed interest in this meeting at (VENUE), which could begin as soon as 11:30 and end as late 1:45 (Event Window).	
+   	S5.1 	Join an event: Interested
+This all sounds good to Matt. He still wants to look at other events, so he selects "I'm Interested" instead of the "I'll Be There" option, adding his name to the list with the other two users.	
+   	S5.2 	Join an event: Confirmed 
+Shortly after Matt joins the event, the bar at the top of the event changes color and displays the word "Confirmed". SCREEN_NAME_ONE has confirmed that (s)he will be there. 
 	
-   	S5.1 Join an event: Interested
-	This all sounds good to Matt. He still wants to look at other events, so he selects "I'm Interested" instead of the "I'll Be There" option, adding his name to the list with the other two users.
-	The "I'll Be There" still appears, with tool to select a specific start and end time within the broader Event Window.
-	
-   	S5.2 Join an event: Confirmed 
-	Shortly after Matt joins the event, the bar at the top of the event changes color and displays the word "Confirmed". SCREEN_NAME_ONE has confirmed that (s)he will be there. 
-	The the "I'll Be There" option is still available, but the time selection tool next to has vanished, replaced with "12:00 to 1:00".
-	
-	Still looking at the Detail view of the event, Matt sees his name and Charles' under the heading "Interested".(This may not be a heading, could be any distinguishing marker.)
-	A moment later, Charles' name moves from "interested" to "Confirmed". 
-	Another dialog opens with the message: "Your classmate Charles has confirmed for lunch at VENUE, from TIME_START to TIME_END. Would you like to confirm, too?". (Verbiage subject to change, of course)
-	Matt taps "YES". His name in the detail view of the event moves from "Interested" to "Confirmed".
-
    S6.0 Invite non-user to join a meeting
-	Matt thinks that his classmate Lindsey would probably like to join this meeting. He closes the Detail view (because the option to share should not be hidden) and opens the context menu for the event he just confirmed. 
-	One of the options in this menu is "Invite a guest to this meeting." He selects that option and types Lindsey's email address. In the optional Message to Guest field he types "Hi Lin. It's Matt. Join me and Chuck for lunch!", and the clicks the INVITE button.
-	*Note: OverLunch should now check for Lindsey's email address in the user database. Not finding it means Lindsey will be sent a signup link. Perhaps it can include a token that automatically shows this meeting once her signup is complete.
-		If Lindsey is a user, she will be sent a meeting invitation link via email, but when she looks at the Events list, it should be immediately obvious that she has been invited.
+Matt thinks that his classmate Lindsey would probably like to join this meeting. He closes the Detail view (because the option to share should not be hidden) and opens the context menu for the event he just confirmed. 
+One of the options in this menu is "Invite a guest to this meeting." He selects that option and types Lindsey's email address. In the optional Message to Guest field he types "Hi Lin. It's Matt. Join me and Chuck for lunch!", and then clicks the INVITE button.
+(OverLunch should now check for Lindsey's email address in the user database. Not finding it means Lindsey will be sent a signup link. Perhaps it can include a token that automatically shows this meeting once her signup is complete.)
+If Lindsey is a user, she will be sent a meeting invitation link via email, but when she looks at the Events list, it should be immediately obvious that she has been invited.
 
    S7.0 View User Profile
-	With a few minutes to spare between classes, Matt explores some of the Overlunch meeting details. Because he and Charles are OverLunch Friends, Matt can see more information about Charles by viewing Charles' user profile. 
-	He discovers this by clicking Charles' name in the meeting they have both already confirmed. Charles' profile shows the other events that he has either confirmed or marked "Interested". 
-	*Viewing your own profile page shows your username, email address,
-	
+With a few minutes to spare between classes, Matt explores some of the OverLunch meeting details. Because he and Charles are OverLunch Friends, Matt can see more information about Charles by viewing Charles' user profile. 
+He discovers this by clicking Charles' name in the meeting they have both already confirmed. Charles' profile shows the other events that he has either confirmed or marked "Interested". 
+(Viewing your own profile page shows your username, email address, and all events occurring either today or tomorrow to which you are either confirmed or interested.)	
   	S7.1	Invite User to Friends List
-	Matt selects one of the events that Charles is Intereted in. He sees that Charles' Sister Bonnie has confirmed for the event.
-	Matt select's Bonnie's name to see her profile, and gets a message saying "You may only view user profile of people in your Friends list. Would you like to invite Bonnie to your friends list?" Matt quickly selects YES.
-		
+Matt selects one of the events that Charles is Interested in. He sees that Charles' sister Bonnie has been confirmed for the event.
+Matt select's Bonnie's name to see her profile, and gets a message saying "You may only view user profiles of people in your Friends list. Would you like to invite Bonnie to your Friends list?" Matt quickly selects YES.		
   	S7.2	Block a user
-	Later, after Bonnie has accepted Matt's invitation to be friends, Matt notices that Bonnie's ex-boyfriend has confirmed for tomorrow's meeting and that Bonnie is not longer in the meeting's list. She must have cancelled. 
-	Mat is about to select the Cancel option from the meeting's context menu, but first, he select's Raphael's name and sees an option to Block User, which he selects. 
-	A message is displayed that explains Blocking a user works in both directions: Matt will no longer see meetings that Raphael has created, and Raphael wil no longer see any meeting created by Matt. They might still each other attached to meetings created by other users.
-	Matt selects the Confirm option. Raphael seemed like a decent guy, but it could be awkward if he wanted to join meetings with Bonnie and had just had lunch with Raphael yesterday.
+Later, after Bonnie has accepted Matt's invitation to be friends, Matt notices that Bonnie's ex-boyfriend Raphael has confirmed for tomorrow's meeting and that Bonnie is no longer in the meeting's list. She must have cancelled. 
+Matt is about to select the Cancel option from the meeting's context menu, but first, he select's Raphael's name and sees an option to Block User, which he selects. 
+A message is displayed that explains Blocking a user works in both directions -- Matt will no longer see meetings that Raphael has created, and Raphael will no longer see any meeting created by Matt. They might still see each other attached to meetings created by other users.
+Matt selects the Confirm option. Raphael seemed like a decent guy, but it could be awkward if he wanted to join meetings with Bonnie and had just had lunch with Raphael yesterday.
 
-   S8.0	Cancel an event (remove yourself from an event. It will still exist for other attached users).
-	Still looking at the details of the meeting with Raphael, Matt returns to the context menu and selects "Cancel". The confirmation message says "You will be removed from this meeting. Continue?". Matt chooses yes, and the meeting detail screen closes.
+   S8.0	Cancel an event
+	(Remove yourself from an event. It will still exist for other attached users).
+Still looking at the details of the meeting with Raphael, Matt returns to the context menu and selects "Cancel". The confirmation message says "You will be removed from this meeting. Continue?". Matt chooses yes, and the meeting detail screen closes.
 
    S9.0	Create an Event
-	After enjoying a lunch meeting sheduled on OverLunch, Matt wants to do it again tomorrow. He opens the app on his phone, opens the OverLunch home screen and clicks the green "Plus" button to create a new event.
-	He selects VENUE_X (from a dropdown menu? From a list of venues that opens in a mew window?).
-	Once the venue is chosen, Matt can choose when he wants his event to occur. (Dev perspective: The app will use the given hours of operation for the venue to prevent a meeting being scheduled outside that time window).
-		(Time range option A)He selects 12:30 as the earliest time he could start a lunch event, and 2:30 as the latest time the event could end.
-		(Time range option B)He selects 12:30 as his earliest possible start time, and 1:30 as his latest possible start time, and then selects a 1 hour duration from the time-spinner.
-		A summary windw tells him "You are creating a new 1 hour long event, beginning tomorrow between 12:30 and 1:30 at VENUE_X. |ADD it| |EDIT it| |CANCEL it|
-			Matt selects "ADD it", creating an unconfirmed event for tomorrow.
-	
-	
-<Optionally, include any pertinent analysis models, such as data flow diagrams, class diagrams, state-transition diagrams, or entity-relationship diagrams.>
-Appendix C: To Be Determined List
-<Collect a numbered list of the TBD (to be determined) references that remain in the SRS so they can be tracked to closure.>
-Copyright © 1999 by Karl E. Wiegers. Permission is granted to use, modify, and distribute this document.
+After enjoying a lunch meeting scheduled on OverLunch, Matt wants to do it again tomorrow. He opens the app on his phone, opens the OverLunch home screen and clicks the green "Plus" button to create a new event.
+He selects VENUE_X. (From a dropdown menu? From a list of venues that opens in a new window?)
+Once the venue is chosen, Matt can choose when he wants his event to occur. (Dev perspective: The app will use the given hours of operation for the venue to prevent a meeting being scheduled outside that time window).
+He selects 12:30 as the earliest time he could start a lunch event, and 2:30 as the latest time the event could end.		
+A summary window tells him "You are creating a new event for tomorrow between 12:30 and 2:30 at VENUE_X. |ADD it| |EDIT it| |CANCEL it|
+	Matt selects "ADD it", creating an unconfirmed event for tomorrow.
