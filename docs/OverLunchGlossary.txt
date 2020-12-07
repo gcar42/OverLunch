@@ -1,0 +1,27 @@
+OverLunch Glossary of Terms
+The terms listed here are defined as used in the early development phase of OverLunch. 
+It is likely that some of them will change.
+
+Event:
+	An event is the intersection of one or more users, a venue, and a time frame.
+	An event exists in one of two primary states:
+		
+		Event States
+		1. Tentative (a proposed meeting)
+			A tentative event (also called an "availability") is a proposal made by a user to 
+				be present at a venue at a specific time (which may not yet be specified) within a potentially larger time frame.
+			When a user creates an event, it is tentative by default, and remains so until a user selects a specific time of arrival
+				at the given venue and confirms his intent to be there (perhaps by checking a box or a tentative/confirmed toggle).
+		
+		2. Confirmed (a meeting)
+			A confirmed event (also called a "meeting")	has:
+				1. a specific time to begin and end, which may be smaller than initially proposed time frame.
+				2. a specific venue
+				3. at least one user who has committed to attendance at the given time and place.
+			An event enters this state when a user specifies a starting time in an availability and comfirms his intent to be there.
+				The user triggering this state may be the user who created the availability, or a different user.
+				If the event is confirmed by a user who is not the event's creator, the creator remains connected to the event, but 
+					is shown as unconfirmed/tentative until he chooses to confirm. This might happen if a user selects an availability and decides 
+					to have lunch at the given time and venue regardless of whether the availability's creator confirms.
+			
+

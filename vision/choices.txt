@@ -1,0 +1,33 @@
+Shaun doing web frontend
+backend probably Python
+communication probably REST API
+
+no calendar integration
+no freeform chat
+venues' menus aren't in scope
+
+stick to lunch
+meetup details in confirmation messages?
+
+if targeting CS students, must include Fusion
+other high priority secondary locations:
+-Crossroads, Lake Effect, MCC Food Court
+ideally support all 13* on campus?
+*Counting the three in MCC Food Court as one
+
+user group: us, then expand
+so, no extensive questions of other people
+
+no location info on venues
+assume users are familiar with the locations and their differences
+
+location has time open attached to it
+
+scheduling 2 days out or 7 days out?
+no repeats (engineering)
+if 2, targeting spontaneous people (marketing)
+
+need a way to define pockets
+mutual confirmation of dual meeting
+one person confirms solo meeting
+-any person on list can join
